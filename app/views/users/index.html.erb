@@ -1,0 +1,10 @@
+<% provide(:title, "All Users") %>
+
+ <div class="container">
+    <div class="row">   
+     <%= render @users %> 
+     <div class="flickr_pagination">
+     <%= will_paginate @users %>
+   </div> 
+    </div>
+ </div>
